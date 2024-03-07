@@ -1,5 +1,7 @@
 body {
-  background-color: #222;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(188,155,163,1) 60%, rgba(56,114,195,1) 100%);
+  /*background-color: #222;*/
 }
 a:visited {
   color: #222;
@@ -7,19 +9,35 @@ a:visited {
 mark {
   color: #222;
   background: #f7941e;
+  font-weight: 600;
 }
 li {
   color: rgba(255, 255, 255, 1);
 }
 img {
-  width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 10px;
 }
+
+.CD{
+  width:50%;
+}
+.ENFP{
+  width: 100px;
+}
+.SAD{
+  width: 250px;
+}
+
 .container {
   width: 88%;
   color: white;
   /* background-color: aliceblue; */
   margin: 0 auto;
-  border: 1px solid #f7941e;
+  border: 3.5px solid #ffffff;
   padding: 40px;
   border-radius: 20px;
   margin: 60px;
@@ -33,13 +51,20 @@ p {
   font-size: 20px;
   font-weight: 700;
 }
+
 b {
   color: #f7941e;
 }
+
+
 h3 {
   text-align: center;
 }
 .noDot {
   list-style: none;
-  padding-top: 300px;
 }
+.right{
+  list-style: none;
+  text-align: right;
+}
+
