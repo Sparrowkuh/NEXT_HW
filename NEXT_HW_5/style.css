@@ -1,0 +1,114 @@
+.background{
+    background-color: rgb(237, 237, 237);
+}
+
+
+
+
+.ibm-plex sans kr-regular {
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+  
+.ibm-plex sans kr-medium {
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30;
+}
+
+body{
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: "10px";
+}
+
+.bold{
+    font-weight: 700;
+    font-size: 110%;
+}
+
+.box{
+    border-radius: 10px;
+    margin: 2.5% 2%;
+    background-color: #fff;
+}
+
+
+
+.row{
+    display: flex;
+    align-items: center;
+    
+}
+
+.top{
+    padding-top: 15px;
+    padding-left: 25px;
+    font-size: 120%;
+}
+
+.song{
+    width: 50px;
+    height: 26px;
+    background-color: rgb(227, 227, 227);
+    border-radius: 24%;
+    text-align: center;
+    padding-top: 4px;
+    font-size: 88%;
+    position: absolute;
+    right: 50px;
+
+}
+
+
+.bank{
+    padding-top: 20px;
+}
+
+.title{
+    display:flex;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+.adv{
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top:30px;
+    padding-right:20px;
+}
+.TOSS{
+    padding-left: 20px;
+}
+
+
+
+.bottom{
+    display: flex;
+    justify-content: space-around;
+}
+.box2{
+    background-color: rgb(245, 245, 245);
+    position:fixed;
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+    width: 99%;
+    height:15%;
+    bottom:0px;
+    box-shadow: -10px, -10px, -10px, 5px black;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.toss{
+    max-width: 200px;
+    max-height: 200px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
