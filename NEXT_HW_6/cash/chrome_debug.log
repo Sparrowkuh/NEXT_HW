@@ -1,0 +1,12 @@
+[28176:28648:0325/182947.846:WARNING:chrome_main_delegate.cc(740)] This is Chrome version 123.0.6312.59 (not a warning)
+[28176:28648:0325/182947.958:INFO:policy_logger.cc(145)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(168) Starting CBCM Controller Initialization
+[28176:28648:0325/182947.958:INFO:policy_logger.cc(145)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(196) No machine level policy manager exists.
+[28176:28648:0325/182950.246:INFO:CONSOLE(0)] "Third-party cookie will be blocked. Learn more in the Issues tab.", source: https://www.koreabaseball.com/ (0)
+[28176:28648:0325/182950.247:INFO:CONSOLE(0)] "Third-party cookie will be blocked. Learn more in the Issues tab.", source: https://www.koreabaseball.com/ (0)
+[28176:28648:0325/182950.247:INFO:CONSOLE(0)] "Third-party cookie will be blocked. Learn more in the Issues tab.", source: https://www.koreabaseball.com/ (0)
+[28176:28648:0325/182950.583:INFO:CONSOLE(0)] "Third-party cookie will be blocked. Learn more in the Issues tab.", source: https://www.koreabaseball.com/ (0)
+[28176:28648:0325/182950.583:INFO:CONSOLE(0)] "Third-party cookie will be blocked. Learn more in the Issues tab.", source: https://www.koreabaseball.com/ (0)
+[28176:28648:0325/182950.583:INFO:CONSOLE(0)] "Third-party cookie will be blocked. Learn more in the Issues tab.", source: https://www.koreabaseball.com/ (0)
+[28176:28648:0325/182951.007:WARNING:capture_device_ranking.h(255)] Can't initialize the value of media.audio_input.user_preference_ranking because media.default_audio_capture_device isn't registered or is empty
+[28176:28648:0325/182951.007:WARNING:capture_device_ranking.h(255)] Can't initialize the value of media.video_input.user_preference_ranking because media.default_video_capture_Device isn't registered or is empty
+[28176:28648:0325/182951.881:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
