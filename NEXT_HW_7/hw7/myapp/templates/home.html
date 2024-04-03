@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Article</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+</head>
+<body>
+    
+    <div class="row">
+        <h2>PORTFOLIO</h2>
+        <div class="container right">
+            <a href="{% url 'income' %}" title="Button push blue/green" class="button btnPush btnBlueGreen">Interactive Computing</a>
+            <a href="https://github.com/Sparrowkuh/NEXT_HW" title="Button push blue/green" class="button btnPush btnBlueGreen">NEXT</a>
+            <a href="{% url 'SNS' %}" title="Button push blue/green" class="button btnPush btnBlueGreen">SNS</a>
+            <div class="clear"></div>
+        </div>
+            
+    </div>
+    <div class="row">
+        <div class="pad">
+            <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMTNfODMg%2FMDAxNjEwNTE3MTc2Mzg4.G13TwSJ5_zDqX_MIU7uzOXAuTe5HWw6YvEwOyLuF9xkg.m_g7XcwfKn5floTvJEsnPC5HR_1Hh1_3UkPi2HtmNgsg.JPEG.jal_salgungni%2F%25C4%25B8%25C3%25B38.JPG&type=sc960_832" class="round"/>
+        </div>
+        <div class="pad">
+            <div>경력</div>
+            <li>고려대학교 사학과 입학</li>
+            <li>2021 세계 유네스코 청년 문화재지킴이 </li>
+            <li>사학과 새내기배움터 준비위원회 기획팀장</li>
+            <li>고대농악대 45대 홍보팀장</li>
+            <li>노트하우 갓생즈 1기</li>
+            <li>서민금융진흥원 SNS  청년 컨설턴트</li>
+            <li>GAP  소비자 리더 서포터즈</li>
+            <li>제 2전공 소프트벤처융합전공 합격</li>
+            <li>고려대학교 39대 동아리연합회 기악예술분과장 당선</li>
+            <li>대치동 열정스토리 강사</li>
+            <li>SK suniC 2기</li>
+            <li>KBS  영상진흥원 AI 블랜더 5기</li>
+            <li>2024동아리박람회 동아리팀장</li>
+            <li>인촌기념관 및 418 기념관 대관 TF장</li>
+            
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>

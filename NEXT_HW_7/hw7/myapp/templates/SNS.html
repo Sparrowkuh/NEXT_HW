@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNS</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+
+</head>
+<body>
+    <h2>MY SNS</h2>
+    <div>
+        <div class="container right">
+            <a href="https://www.instagram.com/hwangyujin94/" title="Button push blue/green" class="button btnPush btnBlueGreen">Personal Instagram</a>
+            <a href="https://www.instagram.com/small_acorn0810/" title="Button push blue/green" class="button btnPush btnBlueGreen">Work Instagram</a>
+            <a href="https://www.youtube.com/@user-xz2lk2ur6y" title="Button push blue/green" class="button btnPush btnBlueGreen">YouTube</a>
+        </div>
+    </div>
+    <div>
+        <h3>내용</h3>
+    </div>
+    <div class="container right">
+        <a href="{% url 'home' %}" title="Button push blue/green" class="button btnPush btnBlueGreen">HOME으로 돌아가기</a>
+    </div>
+    
+    
+</body>
+</html>

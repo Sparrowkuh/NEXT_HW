@@ -1,0 +1,101 @@
+body{
+    background-color :#E3DAC9;
+}
+
+h2{
+    color:#14110A;
+}
+
+
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.right{
+    display:flex;
+    justify-content: flex-end;
+}
+
+
+.round {
+    border-radius: 40%; 
+    overflow: hidden;
+}
+
+.container {
+    padding-top: 1em;
+    margin-top: 1em;
+    border-top: 
+      solid
+      1px
+      #CCC;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700);
+
+/*
+.fonts {
+  font-family: 'Josefin Slab', serif;
+}
+*/
+
+body {
+  font-family: 'Josefin Slab', serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333;
+  background: #ececec;
+  overflow-y: scroll;
+}
+
+p {
+  margin-bottom: 0.5em;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #00AE68;
+}
+
+.clear {
+  clear: both;
+}
+
+
+.container {
+  padding-top: 1em;
+  margin-top: 1em;
+  border-top: 
+    solid
+    1px
+    #CCC;
+}
+
+a.button {
+  display: block;
+  position: relative;
+  float: left;
+  width: 120px;
+  padding: 0;
+  margin: 10px 20px 10px 0;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  color: #FFF;
+  border-radius: 5px;
+  transition: all 0.2s ;
+}
+
+.btnBlueGreen {
+  background: #00AE68;
+}
+
+.pad{
+    padding-left: 30px;
+    padding-top: 100px;
+    padding-right: 30px;
+}
+

@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>incom</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+</head>
+<body>
+    <a href="https://openprocessing.org/user/434457?view=activity&o=5" class="row">
+        <h2>CLASS</h2>
+    </a>
+    <div class="container right">
+        <a href="{% url 'home' %}" title="Button push blue/green" class="button btnPush btnBlueGreen">HOME으로 돌아가기</a>
+    </div>
+    <div class="row">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cpEeqACsF_Q?si=X6Ppl0IZrEWerHrj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <div>
+            <div class="right">
+                <img src="https://openprocessing-usercontent.s3.amazonaws.com/thumbnails/visualThumbnail2207180@2x.jpg?hash=20240313035251"/>
+            <img src="https://openprocessing-usercontent.s3.amazonaws.com/thumbnails/visualThumbnail2215247@2x.jpg?hash=20240320033740"/>
+            </div>
+            <div class="right">    
+                <img src="https://openprocessing-usercontent.s3.amazonaws.com/thumbnails/visualThumbnail2222147@2x.jpg?hash=20240327042640"/>
+                <img src="https://openprocessing-usercontent.s3.amazonaws.com/thumbnails/visualThumbnail2228636@2x.jpg?hash=20240403043030"/>
+            </div>
+        </div>
+    </div>
+    <div class="container right">
+        <a href="https://coolors.co/" title="Button push blue/green" class="button btnPush btnBlueGreen">coolors</a>
+        <a href="https://p5js.org/ko/reference/" title="Button push blue/green" class="button btnPush btnBlueGreen">p5.js reference</a>
+
+    </div>
+</body>
+</html>
