@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Planner</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>플래너 블로그</h1>
+    <div>
+        <ul>
+            {% for post in posts %}
+            <li>
+                <a href="{% url 'detail' post.pk %}">{{post.title}}</a>
+            </li>
+            <div>D-{{ post.d_day }}</div>
+            </ul>
+            {% endfor %}
+        </ul>
+    </div>
+    <a href="{% url 'new' %}">계획 작성하기</a>
+</body>
+</html>

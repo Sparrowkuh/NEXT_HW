@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div>
+        <h2>계획 제목</h2>
+        <p>{{post.title}}</p>
+    </div>
+    <div>
+        <h2>계획 내용</h2>
+        <p>{{post.content}}</p>
+    </div>
+    <div>
+        <h2>D-DAY</h2>
+        <p>
+            {% if post.d_day > 0 %}D-{{ post.d_day }}{% elif post.d_day == 0 %}Today!{% else %}D+{{ post.d_day|abs
+            }}{% endif %}
+        </p>
+    </div>
+    <a href="{% url 'home' %}">홈 으로</a>
+    <a href="{% url 'update' post.pk %}">수정하기</a>
+    <a href="{% url 'delete' post.pk %}">삭제하기</a>
+</body>
+</html>
