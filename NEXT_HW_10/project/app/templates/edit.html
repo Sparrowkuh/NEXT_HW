@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block content %}
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'edit.css' %}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ceviche+One&family=Inter:wght@900&family=Jua&family=Koulen&display=swap" rel="stylesheet">
+    <title>Project</title>
+</head>
+
+
+<body>
+    
+    <div class="title">
+        Edit!
+    </div>
+    <div class="container">
+        <div class="edit-post_container">
+            <form method="POST" action="">
+                {% csrf_token %}
+                <input type="text" value="{{post.title}}" name="title" placeholder="수정할 제목!">
+                <textarea name="content" placeholder="수정할 내용!">{{post.content}}</textarea>
+                <input id="edit-post_btn" type="submit" value="수정하기">
+            </form>
+        </div>
+    </div>
+    
+</body>
+
+{% endblock %}
+</html>

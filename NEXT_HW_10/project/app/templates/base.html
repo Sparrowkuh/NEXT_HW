@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="{% static 'favicon.png' %}" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Ceviche+One&family=Inter:wght@900&family=Jua&family=Koulen&display=swap"
+        rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}" />
+    {% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    {% endblock css %}
+    <title>Project</title>
+</head>
+
+
+<body>
+    <div class="title">
+        {% block title %} 
+        
+        {% endblock title %}
+    </div>
+    <div class="container">
+        {% block content %}
+        
+        <div class="posts_box">
+            {% for post in posts %}
+            <a href="{% url 'detail' post.pk %}">
+                <div class="post_wrapper">
+                    <div class="post_title">
+                        제목: {{post.title}}
+                    </div>
+                    <div class="post_content">
+                        내용 : {{post.content}}
+                    </div>
+
+                </div>
+            </a>
+
+            {% endfor %}
+        {% endblock content %}
+
+
+
+        <footer>
+            <p>황유진의 블로그</p>
+        </footer>
+    </div>
+</body>
+
+</html>

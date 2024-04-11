@@ -1,0 +1,19 @@
+body {
+    margin:0;
+    width: 100%;
+    background-color:aliceblue;
+}
+
+.title {
+    text-align:center;
+    margin-top:25px;
+    font-size:3.5rem;
+    color:#898989;
+    font-family: 'Koulen', cursive;
+}
+
+.container {
+    width:100%;
+    display:flex;
+    justify-content: center;
+}

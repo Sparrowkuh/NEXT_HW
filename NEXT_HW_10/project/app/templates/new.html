@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+{% block content %}
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'new.css' %}">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ceviche+One&family=Inter:wght@900&family=Jua&family=Koulen&display=swap"
+        rel="stylesheet">
+    <title>Project</title>
+</head>
+
+<body>
+    <div class="title">
+        New!
+    </div>
+    
+    <div class="container">
+        <div class="new-post_container">
+            <form method="POST" action="">
+                {% csrf_token %}
+                <input type="text" placeholder="제목을 입력하세요!" name="title">
+                <textarea placeholder="내용을 입력하세요!" name="content"></textarea>
+                <input id="new-post_btn" type="submit" value="작성하기">
+            </form>
+        </div>
+    </div>
+    
+</body>
+{% endblock %}
+</html>
