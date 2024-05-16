@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% load account socialaccount %} {% providers_media_js %}
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="UTF-8" />
+        <link rel="shortcut icon" href="{% static 'favicon.png' %}" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ceviche+One&family=Inter:wght@900&family=Jua&family=Koulen&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}" />
+        {% block css %} {% endblock css %}
+        <title>Project</title>
+    </head>
+
+    <body>
+        <form method="POST" action="{% provider_login_url 'kakao' %}">
+            {% csrf_token %} {{ form.as_p }} {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
+            <button class="primaryAction" type="submit">Continue with kakao</button>
+        </form>
+        <form method="POST" action="{% provider_login_url 'google' %}">
+            {% csrf_token %} {{ form.as_p }} {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
+            <button class="primaryAction" type="submit">Continue with google</button>
+        </form>
+        <nav id="navbar">
+            <div class="navbar__logo">
+                <a href="#">NEXT-LIKELION</a>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item">
+                    <a href="{% url 'new' %}">New</a>
+                </li>
+                <li class="navbar__menu__item">
+                    <a href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="navbar menu item">
+                    <a href="{% provider_login_url 'kakao' %}">카카오 로그인</a>
+                </li>
+                <li class="navbar menu item">
+                    <a href="{% provider_login_url 'google' %}"> 구글 로그인 </a>
+                </li>
+                {% if user.is_authenticated %}
+                <span class="navbar__menu__item">안녕, {{user.username}}</span>
+                <li class="navbar__menu__item">
+                    <a href="{% url 'logout'%}">로그아웃</a>
+                </li>
+                {% else %}
+                <li class="navbar__menu__item">
+                    <a href="{% url 'login'%}">로그인</a>
+                </li>
+                <li class="navbar__menu__item">
+                    <a href="{% url 'signup'%}">회원가입</a>
+                </li>
+                {% endif %}
+            </ul>
+        </nav>
+        <div class="title">{% block title %} {% endblock title %}</div>
+        <div class="container">{% block content %} {% endblock content %}</div>
+    </body>
+</html>
